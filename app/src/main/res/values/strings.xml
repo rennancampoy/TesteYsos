@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Teste Ysos</string>
+    <string name="toolbarNameListUsers">Explorar</string>
 </resources>
