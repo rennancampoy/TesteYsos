@@ -1,9 +1,10 @@
-package com.example.testeysos
+package com.example.testeysos.views.users
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.testeysos.R
 
-class MainActivity : AppCompatActivity() {
+class UsersActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
