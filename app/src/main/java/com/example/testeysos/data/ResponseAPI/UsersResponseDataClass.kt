@@ -1,5 +1,4 @@
-package com.example.testeysos.data.ResponseAPI
-
+package com.example.testeysos.data.responseAPI
 
 import com.squareup.moshi.Json
 

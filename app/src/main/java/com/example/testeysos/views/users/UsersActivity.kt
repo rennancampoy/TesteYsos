@@ -7,6 +7,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.testeysos.R
+import com.example.testeysos.views.userDetails.UserDetailsActivity
 import kotlinx.android.synthetic.main.list_user_layout.*
 
 class UsersActivity : AppCompatActivity() {
@@ -32,7 +33,11 @@ class UsersActivity : AppCompatActivity() {
                     layoutManager = GridLayoutManager(this@UsersActivity, 2, RecyclerView.VERTICAL, false)
 
                     //O UsersAdapter recebe uma lista de usuários, que neste caso será a lista users fornecida pelo LiveData na ViewModel
-                    adapter = UsersAdapter(users)
+                    adapter = UsersAdapter(users) { user ->
+                        val intent = UserDetailsActivity.getStartIntent(this@UsersActivity, user)
+                        //Inicia a activity declarada na
+                        this@UsersActivity.startActivity(intent)
+                    }
                 }
             }
         })
