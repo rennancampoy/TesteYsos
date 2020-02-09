@@ -84,12 +84,12 @@
 
                 <TextView
                     android:id="@+id/userGenderOrientationAge"
-                    tools:text="Genero + Orientação + Idade"
-                    android:textSize="14sp"
-                    android:layout_height="wrap_content"
                     android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="2dp"
-                    android:textColor="#FFF"/>
+                    android:textColor="#FFF"
+                    android:textSize="13sp"
+                    tools:text="Genero + Orientação + Idade" />
 
             </LinearLayout>
 
